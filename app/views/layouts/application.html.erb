@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forum</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+	  <nav class="offset1">
+	    <% if user_signed_in? %>
+	      <%= link_to current_user.email, main_app.edit_user_registration_path %>
+	      | <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
+	      <% if current_user.forem_admin %>
+	          | <%= link_to "Administrate", forem.admin_root_url %>
+	      <% end %>
+	    <% else %>
+	      <%= link_to t("top_menu.sign_up"), main_app.new_user_registration_path %>
+	      | <%= link_to t("top_menu.sign_in"), main_app.new_user_session_path %>
+	    <% end %>
+	  </nav>
+	  <% if flash[:notice] %>
+	  	<p class="alert alert-info"><%= notice %></p>
+	  <% elsif flash[:alert] %>
+      	<p class="alert alert-warning"><%= alert %></p>
+      <% end %>
+	</header>
+	<div class="offset1 span10">
+		<%= yield %>
+	</div>
+</body>
+</html>
