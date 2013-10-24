@@ -5,8 +5,12 @@ Forum::Application.routes.draw do
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Forem relies on it being the default of "forem"
+<<<<<<< HEAD
   mount Forem::Engine, :at => '/'
   root :to => "forem/forums#index"
+=======
+  mount Forem::Engine, :at => '/forums'
+>>>>>>> master
 
   devise_for :users
 

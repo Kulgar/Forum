@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
+<<<<<<< HEAD
 gem 'rails-i18n', '~> 3.0.0'
 gem 'devise-i18n'
+=======
+>>>>>>> master
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+<<<<<<< HEAD
 group :development, :test do
   gem 'sqlite3'
 end
@@ -14,6 +18,9 @@ end
 group :staging, :production do
   gem 'pg'
 end
+=======
+gem 'sqlite3'
+>>>>>>> master
 
 
 # Gems used only for assets and not required
@@ -34,8 +41,11 @@ gem 'devise'
 
 gem 'will_paginate', '3.0.4'
 gem 'forem', :github => "radar/forem"
+<<<<<<< HEAD
 gem 'forem-bootstrap', :github => "radar/forem-bootstrap"
 gem 'bootstrap-sass', '~> 2.3.2.1'
+=======
+>>>>>>> master
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

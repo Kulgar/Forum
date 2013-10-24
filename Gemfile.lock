@@ -1,4 +1,5 @@
 GIT
+<<<<<<< HEAD
   remote: git://github.com/radar/forem-bootstrap.git
   revision: ed6dca40937b5c73e0ab04c912d27313e945362b
   specs:
@@ -6,6 +7,8 @@ GIT
       bootstrap-sass (~> 2.3.2.1)
 
 GIT
+=======
+>>>>>>> master
   remote: git://github.com/radar/forem.git
   revision: 71d0f170a0d26a1b4c0b6bd4551e2477ce077bd6
   specs:
@@ -52,8 +55,11 @@ GEM
     arel (3.0.2)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+<<<<<<< HEAD
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
+=======
+>>>>>>> master
     builder (3.0.4)
     cancan (1.6.10)
     coffee-rails (3.2.2)
@@ -71,7 +77,10 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+<<<<<<< HEAD
     devise-i18n (0.9.1)
+=======
+>>>>>>> master
     erubis (2.7.0)
     execjs (2.0.2)
     friendly_id (4.0.10.1)
@@ -106,9 +115,12 @@ GEM
       activesupport (= 3.2.14)
       bundler (~> 1.0)
       railties (= 3.2.14)
+<<<<<<< HEAD
     rails-i18n (3.0.0)
       i18n (~> 0.5)
       rails (>= 3.0.0, < 4.0.0)
+=======
+>>>>>>> master
     railties (3.2.14)
       actionpack (= 3.2.14)
       activesupport (= 3.2.14)
@@ -156,6 +168,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   bootstrap-sass (~> 2.3.2.1)
   coffee-rails (~> 3.2.1)
   devise
@@ -165,6 +178,13 @@ DEPENDENCIES
   jquery-rails
   rails (= 3.2.14)
   rails-i18n (~> 3.0.0)
+=======
+  coffee-rails (~> 3.2.1)
+  devise
+  forem!
+  jquery-rails
+  rails (= 3.2.14)
+>>>>>>> master
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
